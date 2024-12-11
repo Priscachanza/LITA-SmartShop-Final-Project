@@ -17,7 +17,8 @@ below is an image of the successfully created security group.
 
 ![alt text](<Screenshot (47).png>)
 
-2. Launch an EC2 Instance
+#### Launched an EC2 Instance
+
 In the EC2 Dashboard, an instance was launch and it was named “priscachanza_lita”
 i Selected Amazon Linux 2 as the Operating System and a t2.micro instance type
 and then i configured the instance with the public subnet and assign the Security Group 
@@ -31,13 +32,15 @@ below is an image of the successfully launched instance that is up and running.
 
 ![alt text](<Screenshot (49).png>) 
 
-Note: under the network settings, for the vpc, I used the VPC created by the LITA "lita_project_vpc"
+#### Note: 
+under the network settings, for the vpc, I used the VPC created by the LITA "lita_project_vpc"
  I then select the subnet to the public subnet
  the “Auto-assign Public IP” i set it to “Enabled”
  and then i selected the already existing security group earlier created
  and then i launched the instance.
 
-3. Installing Apache Web Server
+#### Installing Apache Web Server
+
 under the SSH into the instance there's the key pair that i used to install the apache,
 i went to the location where you downloaded my keypair "in downloads" and i Right click on 
 any space and select the “git bash here”
@@ -52,9 +55,13 @@ check on the image below:
 
 i runned the following command to install the apache:
 sudo yum update -y
+
 sudo yum install httpd -y
+
 sudo systemctl start httpd
+
 sudo systemctl enable httpd
+
 installation complete
 ![alt text](<Screenshot (52).png>) 
 
