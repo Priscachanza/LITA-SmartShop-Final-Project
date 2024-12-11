@@ -6,7 +6,7 @@
 
 ### below is my step by step process
 
-1. created the security group
+#### 1. created the security group
 Set Up Security Groups
 i went to the Security Group and create a new group. 
 the new created group was allowing inbound HTTP (port 80) from anywhere 
@@ -17,7 +17,7 @@ below is an image of the successfully created security group.
 
 ![alt text](<Screenshot (47).png>)
 
-#### Launched an EC2 Instance
+#### 2. Launched an EC2 Instance
 
 In the EC2 Dashboard, an instance was launch and it was named “priscachanza_lita”
 i Selected Amazon Linux 2 as the Operating System and a t2.micro instance type
@@ -39,7 +39,7 @@ under the network settings, for the vpc, I used the VPC created by the LITA "lit
  and then i selected the already existing security group earlier created
  and then i launched the instance.
 
-#### Installing Apache Web Server
+#### 3. Installing Apache Web Server
 
 under the SSH into the instance there's the key pair that i used to install the apache,
 i went to the location where you downloaded my keypair "in downloads" and i Right click on 
@@ -62,9 +62,10 @@ sudo systemctl start httpd
 
 sudo systemctl enable httpd
 
-installation complete
+#### 4. installation complete
 ![alt text](<Screenshot (52).png>) 
 
+#### 5. Test page
 the apache was successfully installed the SmartShop infrastructure of vpc, instance 
 and security group was connected successfully, the public ip address is: 54.224.237.128
 below is the test page
